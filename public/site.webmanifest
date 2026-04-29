@@ -1,0 +1,10 @@
+{
+  "name": "Miriade — Servizi Digitali e Consulenze",
+  "short_name": "Miriade",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#8DC63F",
+  "background_color": "#fafaf7",
+  "display": "standalone"
+}
