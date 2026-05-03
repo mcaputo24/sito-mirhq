@@ -7,6 +7,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         consulenzaPA: resolve(__dirname, 'consulenza-pa.html'),
+        consulenzaLibreria: resolve(__dirname, 'consulenza-libreria.html'),
+        consulenzaEditoriale: resolve(__dirname, 'consulenza-editoriale.html'),
         grazie: resolve(__dirname, 'grazie.html'),
       },
     },
