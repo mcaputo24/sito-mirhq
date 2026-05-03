@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#8DC63F">
+<title>Grazie — Pagamento ricevuto | Miriade</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+<link rel="stylesheet" href="/src/sales.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="2" y="16" font-family="serif" font-size="15" font-weight="bold" fill="white">M</text>
+        <circle cx="17" cy="16" r="3" fill="white"/>
+      </svg>
+    </div>
+    <span class="logo-name">Miriade</span>
+  </a>
+</nav>
+
+<section class="grazie-hero">
+  <div class="grazie-inner">
+    <div class="grazie-checkmark">
+      <svg viewBox="0 0 64 64" width="64" height="64">
+        <circle cx="32" cy="32" r="30" fill="#8DC63F"/>
+        <path d="M18 32 L28 42 L46 22" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="sales-tag">Pagamento confermato</div>
+    <h1>Grazie. Ho ricevuto il tuo ordine.</h1>
+
+    <p class="grazie-lead" id="grazie-lead">
+      A breve riceverai per email la ricevuta del pagamento. Nel frattempo, ecco cosa succede ora.
+    </p>
+
+    <div class="grazie-steps">
+      <div class="grazie-step">
+        <div class="grazie-step-num">1</div>
+        <div class="grazie-step-content">
+          <div class="grazie-step-title">Riceverai una mia email entro 24 ore lavorative</div>
+          <div class="grazie-step-desc">Scrivo personalmente da <strong>info@mirhq.it</strong>. Controlla anche la cartella Spam: alla prima email, sposta il messaggio in "Posta in arrivo" così le successive non si perdono.</div>
+        </div>
+      </div>
+
+      <div class="grazie-step" id="step-call">
+        <div class="grazie-step-num">2</div>
+        <div class="grazie-step-content">
+          <div class="grazie-step-title">Concordiamo data e ora della call</div>
+          <div class="grazie-step-desc">Nella mia email troverai un link al calendario per scegliere uno slot. Di solito ci sono disponibilità entro 5-7 giorni lavorativi.</div>
+        </div>
+      </div>
+
+      <div class="grazie-step" id="step-prep">
+        <div class="grazie-step-num">3</div>
+        <div class="grazie-step-content">
+          <div class="grazie-step-title">Preparati alla sessione</div>
+          <div class="grazie-step-desc">Più la call è preparata, più è utile. Mandami in anticipo (per email) <strong>1-2 documenti reali</strong> sui quali hai dubbi: un disciplinare, un'offerta esclusa, una checklist che usi oggi. Li leggo prima della call.</div>
+        </div>
+      </div>
+
+      <div class="grazie-step">
+        <div class="grazie-step-num">4</div>
+        <div class="grazie-step-content">
+          <div class="grazie-step-title">Dopo la call</div>
+          <div class="grazie-step-desc">Ricevi via email la <strong>registrazione</strong> della sessione e un <strong>mini-report</strong> con i punti chiave. Per i 7 giorni successivi puoi scrivermi via email per ulteriori dubbi: rispondo entro 24 ore.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grazie-help">
+      <div class="grazie-help-title">Domande o problemi?</div>
+      <div class="grazie-help-text">Scrivimi direttamente a <a href="mailto:info@mirhq.it">info@mirhq.it</a> citando il numero di ordine che trovi nella ricevuta Stripe. Rispondo entro qualche ora.</div>
+    </div>
+
+    <div class="grazie-actions">
+      <a href="/" class="btn-secondary">← Torna alla home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-logo-mark">
+        <svg viewBox="0 0 22 22" width="20" height="20" fill="none">
+          <text x="2" y="16" font-family="serif" font-size="14" font-weight="bold" fill="white">M</text>
+          <circle cx="17" cy="16" r="2.5" fill="white"/>
+        </svg>
+      </div>
+      <span class="footer-name">Miriade</span>
+    </div>
+    <div class="footer-copy">
+      © 2025 Miriade S.r.l.s. — P.IVA IT04833550751 — Nardò (LE), Italia
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Personalizza il messaggio in base al servizio acquistato
+  const params = new URLSearchParams(window.location.search);
+  const servizio = params.get('servizio');
+
+  const messaggi = {
+    'consulenza-pa': {
+      lead: 'Hai prenotato la consulenza <strong>"Vendere alla Pubblica Amministrazione"</strong>. A breve riceverai per email la ricevuta. Nel frattempo, ecco i prossimi passi.'
+    },
+    'consulenza-libreria': {
+      lead: 'Hai prenotato la consulenza <strong>"Aprire e gestire una libreria indipendente"</strong>. A breve riceverai per email la ricevuta. Nel frattempo, ecco i prossimi passi.'
+    },
+    'consulenza-editoriale': {
+      lead: 'Hai prenotato la <strong>Consulenza Editoriale</strong>. A breve riceverai per email la ricevuta. Nel frattempo, ecco i prossimi passi.'
+    },
+    'automazioni-10h': {
+      lead: 'Hai acquistato il <strong>Pacchetto Automazioni — 10 ore di sviluppo</strong>. A breve riceverai per email la ricevuta. Nel frattempo, ecco come procediamo.',
+      step3title: 'Definiamo il primo processo da automatizzare',
+      step3desc: 'Nella prima call (30 min) capiamo insieme quale processo vale la pena automatizzare per primo. Porta esempi concreti: file Excel, screenshot, descrizione del flusso manuale che fai oggi.'
+    }
+  };
+
+  if (servizio && messaggi[servizio]) {
+    const m = messaggi[servizio];
+    if (m.lead) document.getElementById('grazie-lead').innerHTML = m.lead;
+    if (m.step3title) document.querySelector('#step-prep .grazie-step-title').textContent = m.step3title;
+    if (m.step3desc) document.querySelector('#step-prep .grazie-step-desc').innerHTML = m.step3desc;
+
+    // Per automazioni, niente "call" tradizionale → modifica step 2
+    if (servizio === 'automazioni-10h') {
+      document.querySelector('#step-call .grazie-step-title').textContent = 'Concordiamo la prima call di analisi';
+      document.querySelector('#step-call .grazie-step-desc').innerHTML = 'Nella mia email troverai un link al calendario per fissare la prima call (30 minuti) di analisi del processo. Da lì pianifichiamo le 10 ore di sviluppo.';
+    }
+  }
+</script>
+
+</body>
+</html>
