@@ -44,18 +44,13 @@ nav {
   text-decoration: none;
 }
 
-.logo-mark {
+.logo-img {
   width: 36px;
   height: 36px;
-  background: var(--lime);
+  display: block;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
 }
-
-.logo-mark svg { width: 22px; height: 22px; }
 
 .logo-name {
   font-family: 'DM Serif Display', serif;
@@ -733,14 +728,11 @@ footer {
 
 .footer-logo { display: flex; align-items: center; gap: 10px; }
 
-.footer-logo-mark {
+.footer-logo-img {
   width: 32px;
   height: 32px;
-  background: var(--lime);
+  display: block;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer-name { font-family: 'DM Serif Display', serif; color: var(--white); font-size: 16px; }

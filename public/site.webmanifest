@@ -2,7 +2,7 @@
   "name": "Miriade — Servizi Digitali e Consulenze",
   "short_name": "Miriade",
   "icons": [
-    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+    { "src": "/logo.png", "sizes": "294x298", "type": "image/png" }
   ],
   "theme_color": "#8DC63F",
   "background_color": "#fafaf7",
