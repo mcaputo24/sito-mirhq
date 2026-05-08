@@ -464,6 +464,71 @@
 
 .grazie-lead strong { color: var(--dark); font-weight: 500; }
 
+.grazie-booking {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--lime);
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  margin: 2.5rem 0 3rem;
+  text-align: center;
+}
+
+.grazie-booking--email { border-top-color: var(--lime-dark); }
+
+.grazie-booking[hidden] { display: none; }
+
+.grazie-booking-icon {
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.grazie-booking-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--dark);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.grazie-booking-desc {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grazie-booking-desc strong { color: var(--dark); font-weight: 500; }
+
+.grazie-booking-cta {
+  display: inline-flex !important;
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+}
+
+.grazie-booking-fallback {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grazie-booking-fallback a {
+  color: var(--lime-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.grazie-booking-fallback a:hover { color: var(--dark); }
+
 .grazie-steps {
   display: flex;
   flex-direction: column;
