@@ -1,3 +1,11 @@
+/* Font self-hosted via @fontsource (no chiamate a fonts.googleapis.com) */
+@import '@fontsource/dm-sans/300.css';
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+@import '@fontsource/dm-sans/300-italic.css';
+@import '@fontsource/dm-serif-display/400.css';
+@import '@fontsource/dm-serif-display/400-italic.css';
+
 :root {
   --lime: #8DC63F;
   --lime-dark: #6fa02e;
