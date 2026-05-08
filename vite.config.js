@@ -10,6 +10,8 @@ export default defineConfig({
         consulenzaLibreria: resolve(__dirname, 'consulenza-libreria.html'),
         consulenzaEditoriale: resolve(__dirname, 'consulenza-editoriale.html'),
         grazie: resolve(__dirname, 'grazie.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
+        cookie: resolve(__dirname, 'cookie.html'),
       },
     },
   },
