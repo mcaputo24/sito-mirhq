@@ -1,0 +1,51 @@
+/* PAGINA NEWS */
+
+.news-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.news-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+}
+
+.news-date {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--lime-dark);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.news-item h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--dark);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.news-item p {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.news-item p + p { margin-top: 0.75rem; }
+
+.news-item a { color: var(--lime-dark); }
+
+.news-empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 3rem 1rem;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+  .news-item { padding: 1.25rem; }
+}

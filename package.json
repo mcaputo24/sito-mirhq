@@ -1,7 +1,7 @@
 {
   "name": "sito-mirhq",
   "version": "1.0.0",
-  "description": "Sito web Miriade S.r.l.s.",
+  "description": "Sito web Miriade Srls",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

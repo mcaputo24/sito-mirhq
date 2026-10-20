@@ -12,6 +12,7 @@ export default defineConfig({
         grazie: resolve(__dirname, 'grazie.html'),
         privacy: resolve(__dirname, 'privacy.html'),
         cookie: resolve(__dirname, 'cookie.html'),
+        news: resolve(__dirname, 'news.html'),
       },
     },
   },
