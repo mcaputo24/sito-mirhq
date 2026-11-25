@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MiriadeSMS: SMS business e API REST per OTP, notifiche, alert, reminder e comunicazioni istituzionali. Mittente personalizzato, report di consegna, infrastruttura europea. Un servizio Miriade Srls ICC.">
+<meta name="theme-color" content="#8DC63F">
+<title>MiriadeSMS — SMS business e API | Miriade</title>
+<link rel="canonical" href="https://mirhq.it/sms">
+<meta property="og:title" content="MiriadeSMS — SMS business e API">
+<meta property="og:description" content="API REST e piattaforma web per OTP, notifiche, alert e reminder. Un servizio Miriade.">
+<meta property="og:url" content="https://mirhq.it/sms">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="apple-touch-icon" href="/logo.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/src/style.css">
+<link rel="stylesheet" href="/src/sales.css">
+<link rel="stylesheet" href="/src/sms.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/logo.png" alt="Miriade" class="logo-img">
+    <span class="logo-name">Miriade</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#casi-uso">Casi d'uso</a></li>
+    <li><a href="#api">API</a></li>
+    <li><a href="#infrastruttura">Infrastruttura</a></li>
+    <li><a href="https://go.miriadesms.it" target="_blank" rel="noopener">Accedi alla piattaforma</a></li>
+    <li><a href="#richiesta" class="nav-cta">Richiedi accesso</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="sms-hero">
+  <div class="back-link"><a href="/#sms">← Torna ai servizi Miriade</a></div>
+  <div class="sms-hero-inner">
+    <div>
+      <div class="sales-tag">MiriadeSMS — un servizio Miriade</div>
+      <h1>SMS business<br><em>che arrivano davvero.</em></h1>
+      <p class="sales-lead">API REST e piattaforma web per OTP, notifiche, alert e reminder aziendali. Infrastruttura professionale europea ad alta affidabilità, con il supporto diretto di un partner italiano.</p>
+      <div class="sales-hero-actions">
+        <a href="#richiesta" class="btn-primary">Richiedi accesso API →</a>
+        <a href="https://go.miriadesms.it" target="_blank" rel="noopener" class="btn-secondary">Accedi alla piattaforma</a>
+      </div>
+      <div class="sales-trust">
+        <span>✓ Mittente personalizzato</span>
+        <span>✓ Report di consegna</span>
+        <span>✓ Conforme al GDPR</span>
+      </div>
+    </div>
+
+    <div class="sms-terminal" aria-label="Esempio di invio SMS via API">
+      <div class="sms-terminal-bar">
+        <span class="sms-terminal-dot"></span><span class="sms-terminal-dot"></span><span class="sms-terminal-dot"></span>
+        <span class="sms-terminal-label">invio_otp.sh</span>
+      </div>
+<pre><span class="t-cmt"># Invio di un OTP via API REST (esempio indicativo)</span>
+<span class="t-cmt"># Endpoint e credenziali: li ricevi all'attivazione</span>
+
+curl -X POST <span class="t-str">"$API_URL"</span> \
+  -H <span class="t-str">"Authorization: …"</span> \
+  -H <span class="t-str">"Content-Type: application/json"</span> \
+  -d <span class="t-str">'{
+    "to": "+39XXXXXXXXXX",
+    "sender": "MIAAZIENDA",
+    "message": "Il tuo codice è 847291"
+  }'</span>
+
+<span class="t-cmt"># Parametri completi nella documentazione API</span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- NUMERI -->
+<div class="sms-stats">
+  <div class="sms-stat">
+    <div class="sms-stat-val">99,9%</div>
+    <div class="sms-stat-label">Uptime della piattaforma</div>
+  </div>
+  <div class="sms-stat">
+    <div class="sms-stat-val">&lt; 1 s</div>
+    <div class="sms-stat-label">Tempo medio di consegna</div>
+  </div>
+  <div class="sms-stat">
+    <div class="sms-stat-val">EU</div>
+    <div class="sms-stat-label">Infrastruttura e dati in Europa</div>
+  </div>
+  <div class="sms-stat">
+    <div class="sms-stat-val">24 h</div>
+    <div class="sms-stat-label">Risposta alle richieste</div>
+  </div>
+</div>
+
+<!-- CASI D'USO -->
+<section id="casi-uso" class="sales-section" style="background: var(--white);">
+  <div class="section-inner">
+    <div class="sales-section-tag">Casi d'uso</div>
+    <h2>Non solo marketing.<br><em>Comunicazioni che non possono perdersi.</em></h2>
+    <p class="sales-paragraph" style="max-width: 680px;">Gli SMS sono il canale più affidabile per le comunicazioni critiche e transazionali: arrivano su qualsiasi telefono, senza app e senza connessione dati, e vengono letti quasi sempre.</p>
+    <div class="sales-features">
+      <div class="sales-feature">
+        <div class="sms-feature-icon">🔐</div>
+        <div class="sales-feature-title">OTP e autenticazione</div>
+        <div class="sales-feature-desc">Codici monouso per login sicuri, conferma di transazioni e verifica dell'identità. Si integrano via API nel tuo sistema di autenticazione.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">🔔</div>
+        <div class="sales-feature-title">Notifiche e alert</div>
+        <div class="sales-feature-desc">Avvisi automatici su eventi critici, aggiornamenti di stato, alert di sistema. Ideali per gestionali, CRM, e-commerce ed ERP.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">📅</div>
+        <div class="sales-feature-title">Promemoria appuntamenti</div>
+        <div class="sales-feature-desc">Meno appuntamenti saltati per studi medici, professionisti e centri servizi. Invii programmati e mittente con il tuo nome.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">📡</div>
+        <div class="sales-feature-title">Wi-Fi pubblici</div>
+        <div class="sales-feature-desc">Verifica degli utenti degli hotspot tramite OTP via SMS. Una soluzione già adottata da enti pubblici e comuni per gestire gli accessi.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">🏛️</div>
+        <div class="sales-feature-title">Comunicazioni istituzionali</div>
+        <div class="sales-feature-desc">Avvisi a cittadini, studenti e associati. Invii massivi per scuole, università, enti pubblici e associazioni di categoria.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">⚙️</div>
+        <div class="sales-feature-title">Software house e integratori</div>
+        <div class="sales-feature-desc">Aggiungi l'invio di SMS al tuo prodotto con poche righe di codice. Funziona con qualsiasi gestionale, con supporto tecnico dedicato.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- API -->
+<section id="api" class="sales-section sales-section-dark">
+  <div class="section-inner">
+    <div class="sales-section-tag">Integrazione API</div>
+    <h2>API REST semplici,<br>integrabili in meno di un'ora</h2>
+    <div class="sms-api-grid">
+      <ul class="sms-api-list">
+        <li>
+          <div class="sms-api-num">01</div>
+          <div>
+            <div class="sms-api-title">REST e JSON standard</div>
+            <div class="sms-api-desc">Chiamate HTTPS con autenticazione dedicata. Compatibili con PHP, Python, Node.js, Java, .NET e qualsiasi altro linguaggio.</div>
+          </div>
+        </li>
+        <li>
+          <div class="sms-api-num">02</div>
+          <div>
+            <div class="sms-api-title">Mittente personalizzato</div>
+            <div class="sms-api-desc">Invii con il nome della tua azienda come mittente alfanumerico: chi riceve vede il tuo marchio, non un numero sconosciuto.</div>
+          </div>
+        </li>
+        <li>
+          <div class="sms-api-num">03</div>
+          <div>
+            <div class="sms-api-title">Report di consegna in tempo reale</div>
+            <div class="sms-api-desc">Callback per seguire lo stato di ogni messaggio. Sai sempre se e quando un SMS è stato consegnato.</div>
+          </div>
+        </li>
+        <li>
+          <div class="sms-api-num">04</div>
+          <div>
+            <div class="sms-api-title">Invii massivi e programmati</div>
+            <div class="sms-api-desc">Migliaia di messaggi in una sola chiamata, invii pianificati in anticipo e gestione delle liste di destinatari.</div>
+          </div>
+        </li>
+        <li>
+          <div class="sms-api-num">05</div>
+          <div>
+            <div class="sms-api-title">Pannello web incluso</div>
+            <div class="sms-api-desc">Invii manuali, statistiche e gestione del credito su go.miriadesms.it. Nessun software da installare.</div>
+          </div>
+        </li>
+      </ul>
+
+      <div>
+        <div class="sms-terminal">
+          <div class="sms-terminal-bar">
+            <span class="sms-terminal-dot"></span><span class="sms-terminal-dot"></span><span class="sms-terminal-dot"></span>
+            <span class="sms-terminal-label">invio_sms.py</span>
+          </div>
+<pre><span class="t-cmt"># Esempio indicativo in Python</span>
+<span class="t-key">import</span> requests
+
+res = requests.post(
+    API_URL,
+    headers=AUTH_HEADERS,
+    json={
+        <span class="t-str">"to"</span>: <span class="t-str">"+39XXXXXXXXXX"</span>,
+        <span class="t-str">"sender"</span>: <span class="t-str">"MIAAZIENDA"</span>,
+        <span class="t-str">"message"</span>: <span class="t-str">"Il tuo ordine è pronto"</span>,
+    },
+)
+<span class="t-cmt"># Stato dell'invio nella risposta JSON</span></pre>
+        </div>
+        <p class="sms-api-note">Gli esempi sono indicativi: endpoint, autenticazione e parametri esatti sono descritti nella documentazione API.</p>
+        <div class="sms-api-actions">
+          <a href="https://apidoc-en.smstools.it/" target="_blank" rel="noopener" class="btn-primary">Documentazione API →</a>
+          <a href="https://go.miriadesms.it" target="_blank" rel="noopener" class="btn-secondary">Accedi alla piattaforma</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFRASTRUTTURA -->
+<section id="infrastruttura" class="sales-section sales-section-light">
+  <div class="section-inner">
+    <div class="sales-section-tag">Infrastruttura</div>
+    <h2>Tecnologia enterprise,<br><em>con un referente italiano</em></h2>
+    <p class="sales-paragraph" style="max-width: 680px;">MiriadeSMS si appoggia a un'infrastruttura europea di livello enterprise per la messaggistica business: la stessa tecnologia usata da banche, assicurazioni e grandi aziende, con l'assistenza diretta di Miriade.</p>
+    <div class="sales-features sms-features-4">
+      <div class="sales-feature">
+        <div class="sms-feature-icon">⚡</div>
+        <div class="sales-feature-title">Consegna rapida</div>
+        <div class="sales-feature-desc">Instradamento intelligente verso gli operatori italiani ed europei, tempo medio di consegna sotto il secondo e rotte alternative automatiche in caso di guasto.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">🔒</div>
+        <div class="sales-feature-title">Sicurezza e GDPR</div>
+        <div class="sales-feature-desc">Dati trattati in data center europei, in conformità al GDPR e alla normativa italiana. Registro completo di ogni messaggio inviato.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">📊</div>
+        <div class="sales-feature-title">Dashboard e report</div>
+        <div class="sales-feature-desc">Monitoraggio di invii, credito, tasso di consegna e statistiche. Accesso multi-utente con permessi dedicati ed esportazione CSV.</div>
+      </div>
+      <div class="sales-feature">
+        <div class="sms-feature-icon">🤝</div>
+        <div class="sales-feature-title">Supporto diretto</div>
+        <div class="sales-feature-desc">Niente ticket anonimi: parli con chi ti ha attivato il servizio. Ti aiutiamo nell'integrazione e nella scelta del piano più adatto.</div>
+      </div>
+    </div>
+
+    <div class="sms-banner">
+      <div>
+        <div class="sms-banner-title">Sei già cliente MiriadeSMS?</div>
+        <div class="sms-banner-sub">La piattaforma resta su <strong><a href="https://go.miriadesms.it" target="_blank" rel="noopener">go.miriadesms.it</a></strong>, con le stesse credenziali di sempre.</div>
+      </div>
+      <a href="https://go.miriadesms.it" target="_blank" rel="noopener" class="btn-primary">Accedi alla piattaforma →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RICHIESTA -->
+<section id="richiesta" class="sms-contact">
+  <div class="section-inner">
+    <div class="contatti-inner">
+      <div>
+        <div class="section-tag">Inizia oggi</div>
+        <h2 class="section-title">Parliamone</h2>
+        <p style="color: var(--muted); font-size: 16px; font-weight: 300; margin-bottom: 2rem; line-height: 1.7;">Raccontaci cosa devi inviare e a chi. Ti rispondiamo direttamente, senza burocrazia, e ti attiviamo in pochi giorni.</p>
+        <div class="contatti-info">
+          <a href="mailto:info@mirhq.it" class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">info@mirhq.it</div>
+            </div>
+          </a>
+          <a href="https://go.miriadesms.it" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">🖥️</div>
+            <div>
+              <div class="contact-item-label">Piattaforma di invio</div>
+              <div class="contact-item-value">go.miriadesms.it</div>
+            </div>
+          </a>
+          <a href="https://apidoc-en.smstools.it/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">📄</div>
+            <div>
+              <div class="contact-item-label">Documentazione API</div>
+              <div class="contact-item-value">apidoc-en.smstools.it</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form name="sms" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="sms">
+          <p class="honeypot-field">
+            <label>Non compilare: <input name="bot-field"></label>
+          </p>
+          <div class="form-group">
+            <label for="sms-nome">Nome e cognome *</label>
+            <input id="sms-nome" type="text" name="nome" placeholder="Mario Rossi" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="sms-azienda">Azienda o ente</label>
+            <input id="sms-azienda" type="text" name="azienda" placeholder="Nome dell'azienda" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="sms-email">Email *</label>
+            <input id="sms-email" type="email" name="email" placeholder="mario@esempio.it" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="sms-uso">Caso d'uso principale</label>
+            <select id="sms-uso" name="caso_uso">
+              <option value="">Seleziona…</option>
+              <option>OTP / autenticazione</option>
+              <option>Notifiche e alert automatici</option>
+              <option>Promemoria appuntamenti</option>
+              <option>Comunicazioni massive</option>
+              <option>Integrazione in un gestionale</option>
+              <option>Wi-Fi pubblico</option>
+              <option>Altro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sms-messaggio">Messaggio</label>
+            <textarea id="sms-messaggio" name="messaggio" placeholder="Volumi indicativi, tempi, integrazioni…"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Invia la richiesta →</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sales-section" style="background: var(--white);">
+  <div class="sales-inner sales-inner-narrow">
+    <div class="sales-section-tag">Domande frequenti</div>
+    <h2>Prima di iniziare</h2>
+    <div class="sales-faq">
+      <details>
+        <summary>Uso già MiriadeSMS: cambia qualcosa?</summary>
+        <p>No. La piattaforma di invio resta su go.miriadesms.it, con le stesse credenziali, lo stesso credito e le stesse integrazioni. Abbiamo solo spostato la presentazione del servizio sul sito di Miriade.</p>
+      </details>
+      <details>
+        <summary>Posso collegarlo al mio gestionale?</summary>
+        <p>Sì. Le API REST si integrano con qualsiasi software in grado di fare una chiamata HTTPS. Se il tuo gestionale ha già un modulo SMS, verifichiamo insieme come collegarlo.</p>
+      </details>
+      <details>
+        <summary>Gli SMS possono partire con il nome della mia azienda?</summary>
+        <p>Sì, con mittente alfanumerico personalizzato: chi riceve vede il nome della tua attività invece di un numero.</p>
+      </details>
+      <details>
+        <summary>Serve installare qualcosa?</summary>
+        <p>No. Per gli invii manuali basta il pannello web su go.miriadesms.it; per gli invii automatici bastano le API.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/logo.png" alt="Miriade" class="footer-logo-img">
+      <span class="footer-name">Miriade</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/#sms">Servizi</a></li>
+      <li><a href="/#consulenze">Consulenze</a></li>
+      <li><a href="/#automazioni">Automazioni</a></li>
+      <li><a href="/#chi-siamo">Chi siamo</a></li>
+      <li><a href="/#contatti">Contatti</a></li>
+      <li><a href="/news.html">News</a></li>
+      <li><a href="/privacy.html">Privacy Policy</a></li>
+      <li><a href="/cookie.html">Cookie Policy</a></li>
+    </ul>
+    <div class="footer-copy">
+      © 2026 Miriade Srls ICC — P.IVA IT04833550751 — Nardò (LE), Italia
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/sms.js"></script>
+<script type="module" src="/src/cookie-banner.js"></script>
+</body>
+</html>

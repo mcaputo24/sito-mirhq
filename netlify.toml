@@ -5,6 +5,17 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Pagina MiriadeSMS: indirizzo pulito /sms (deve stare prima della regola SPA)
+[[redirects]]
+  from = "/sms"
+  to = "/sms.html"
+  status = 200
+
+[[redirects]]
+  from = "/sms/"
+  to = "/sms.html"
+  status = 200
+
 # Redirect SPA (utile se in futuro aggiungi pagine)
 [[redirects]]
   from = "/*"

@@ -1,6 +1,8 @@
 // Banner informativo cookie — non blocca il sito.
 // Mostrato finché l'utente non clicca "Ho capito", poi non più riproposto per 12 mesi.
 
+import './cookie-banner.css';
+
 const STORAGE_KEY = 'mirhq_cookie_notice_dismissed';
 const VALIDITY_MS = 365 * 24 * 60 * 60 * 1000; // 12 mesi
 

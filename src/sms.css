@@ -1,0 +1,238 @@
+/* PAGINA /sms — MiriadeSMS
+   Si appoggia a style.css e sales.css: qui solo gli elementi specifici della pagina. */
+
+.sms-hero {
+  padding: 130px 2rem 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sms-hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.sms-hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.sms-hero h1 em {
+  font-style: italic;
+  color: var(--lime-dark);
+}
+
+/* Terminale di esempio */
+.sms-terminal {
+  background: var(--dark);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(26, 26, 24, 0.18);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.sms-terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sms-terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sms-terminal-label {
+  margin-left: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sms-terminal pre {
+  margin: 0;
+  padding: 1.25rem 1.4rem;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.t-cmt { color: rgba(255, 255, 255, 0.38); }
+.t-str { color: var(--lime); }
+.t-key { color: #c9d9a8; }
+
+/* Numeri chiave */
+.sms-stats {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sms-stat {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.sms-stat-val {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: var(--lime-dark);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.sms-stat-label { font-size: 13px; color: var(--muted); }
+
+/* Icona nelle card dei casi d'uso */
+.sms-feature-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--lime-light);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Sezione API (fondo scuro) */
+.sms-api-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.sms-api-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sms-api-list li {
+  display: flex;
+  gap: 1rem;
+}
+
+.sms-api-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--lime);
+  min-width: 2rem;
+  line-height: 1.3;
+}
+
+.sms-api-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.sms-api-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.sms-api-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.sales-section-dark .sms-terminal {
+  background: #111110;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.sales-section-dark .btn-secondary {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sales-section-dark .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.sms-api-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Box "Sei già cliente?" */
+.sms-access {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Contatti */
+.sms-contact {
+  background: var(--bg);
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-status.ok { color: var(--lime-dark); }
+.form-status.err { color: #b3402a; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sms-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .sms-api-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .sms-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .sms-hero { padding: 100px 1rem 50px; }
+  .sms-stats { padding: 0 1rem 50px; }
+  .sms-terminal { font-size: 12px; }
+}
+
+/* Infrastruttura: 4 card su una riga in desktop, 2 su tablet, 1 su mobile */
+.sms-features-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1000px) {
+  .sms-features-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .sms-features-4 { grid-template-columns: 1fr; }
+}
+
+/* .sales-section azzera il padding laterale: lo ripristiniamo per le sezioni a tutta larghezza */
+.sales-section > .section-inner { padding: 0 2rem; }
+
+@media (max-width: 768px) {
+  .sales-section > .section-inner { padding: 0 1rem; }
+}
