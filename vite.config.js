@@ -13,6 +13,7 @@ export default defineConfig({
         privacy: resolve(__dirname, 'privacy.html'),
         cookie: resolve(__dirname, 'cookie.html'),
         news: resolve(__dirname, 'news.html'),
+        sms: resolve(__dirname, 'sms.html'),
       },
     },
   },

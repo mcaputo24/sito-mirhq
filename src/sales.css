@@ -94,7 +94,7 @@
 .sales-section-dark { background: var(--dark); color: rgba(255,255,255,0.85); }
 
 .sales-section-dark .sales-section-tag { color: var(--lime); }
-.sales-section-dark h2 { color: var(--white); }
+.sales-section.sales-section-dark h2 { color: var(--white); }
 .sales-section-dark .sales-paragraph { color: rgba(255,255,255,0.7); }
 .sales-section-dark .sales-paragraph strong { color: var(--white); }
 .sales-section-dark .sales-bio-role {
